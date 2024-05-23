@@ -1,4 +1,5 @@
-while 1 > 0:
+z = 0
+while 3 > z:
     n = int(input('Введите необходимое число от 3 до 20 включительно: '))
     list_ = []
     if 20 >= n >= 3:
@@ -11,5 +12,7 @@ while 1 > 0:
         result = ''.join(list_)
         print('Ваш пароль:  ', result)
         break
+
     else:
+        z += 1
         print('Ошибка! Неправильное значение')
